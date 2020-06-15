@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main_layout"
+    android:id="@+id/main_layout0"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/image_hair"
@@ -12,21 +12,21 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/title"
+        android:id="@+id/main_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Clipper. Scissor. Razor"
+        android:text="Clipper. Scissor. Blade"
         android:textColor="@android:color/white"
         android:textSize="30sp" />
 
     <RelativeLayout
-        android:id="@+id/relative_layout"
+        android:id="@+id/main_layout1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal">
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/card_view"
+            android:id="@+id/main_card_view"
             android:layout_width="match_parent"
             android:layout_height="90dp"
             app:cardCornerRadius="8dp"
@@ -34,7 +34,7 @@
             app:cardUseCompatPadding="true">
 
             <TextView
-                android:id="@+id/grateful_text"
+                android:id="@+id/main_slogan"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -44,7 +44,7 @@
     </RelativeLayout>
 
     <Button
-        android:id="@+id/start_button"
+        android:id="@+id/main_getstarted_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@android:color/transparent"

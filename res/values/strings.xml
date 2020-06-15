@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Barber</string>
+    <string name="title_text">Self. Gratitude. Journal</string>
+    <string name="greeting_text">What are you grateful for today?</string>
+    <string name="startButtonText">get started</string>
+    <string name="email_text">email</string>
+    <string name="password_text">password</string>
+    <string name="login_text">Login</string>
+    <string name="or_text">Or</string>
+    <string name="create_account_text">Create Account</string>
+    <string name="username_text">Username</string>
+    <string name="guest_login_text">guest</string>
 </resources>
