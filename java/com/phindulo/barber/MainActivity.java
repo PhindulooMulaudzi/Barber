@@ -16,7 +16,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Objects.requireNonNull(getSupportActionBar()).setElevation(0);
 
         getStarted = findViewById(R.id.main_getstarted_button);
         getStarted.setOnClickListener(new View.OnClickListener() {

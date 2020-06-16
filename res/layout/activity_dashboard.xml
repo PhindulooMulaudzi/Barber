@@ -14,7 +14,9 @@
         android:id="@+id/dashboard_queue_text_summary"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
         android:text="Number in queue: 5"
         android:textColor="@android:color/white"
         android:textSize="18sp"
@@ -26,7 +28,9 @@
         android:id="@+id/dashboard_date_graph"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
         android:text="Live: 15 June 2020"
         android:textColor="@android:color/white"
         android:textSize="18sp"
@@ -37,24 +41,46 @@
     <com.github.mikephil.charting.charts.PieChart
         android:id="@+id/dashboard_queue_graph"
         android:layout_width="match_parent"
-        android:layout_height="333dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="22dp"
-        app:layout_constraintBottom_toTopOf="@+id/dashboard_in_queue"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/dashboard_date_graph2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.157"
+        app:layout_constraintHorizontal_bias="0.473"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/dashboard_date_graph"
-        app:layout_constraintVertical_bias="0.108"/>
+        app:layout_constraintVertical_bias="0.0">
 
-    <ListView
-        android:id="@+id/dashboard_in_queue"
+    </com.github.mikephil.charting.charts.PieChart>
+
+    <TextView
+        android:id="@+id/dashboard_date_graph2"
         android:layout_width="match_parent"
-        android:layout_height="198dp"
-        android:visibility="invisible"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Live: 15 June 2020"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/dashboard_queue_list"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/dashboard_queue_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toTopOf="@+id/dashboard_checkin"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.842"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
 
     <Button
         android:id="@+id/dashboard_checkin"

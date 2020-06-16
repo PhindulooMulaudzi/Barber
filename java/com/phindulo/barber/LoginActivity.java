@@ -6,7 +6,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class LoginActivity extends Activity implements View.OnClickListener {
+import androidx.appcompat.app.AppCompatActivity;
+
+import java.util.Objects;
+
+public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
     private Button login;
     private Button createAccount;
     private Button guest;
