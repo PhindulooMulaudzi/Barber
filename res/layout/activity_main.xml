@@ -50,5 +50,6 @@
         android:background="@android:color/transparent"
         android:text="get started"
         android:textColor="#b3f5de"
+        android:textSize="15sp"
         android:textStyle="bold" />
 </LinearLayout>

@@ -26,11 +26,11 @@ public class LoginActivity extends Activity implements View.OnClickListener {
     }
 
     private void loginExistingAccount() {
-
+        startActivity(new Intent(LoginActivity.this, DashboardActivity.class));
     }
 
     private void loginGuestAccount() {
-
+        startActivity(new Intent(LoginActivity.this, DashboardActivity.class));
     }
 
     @Override
